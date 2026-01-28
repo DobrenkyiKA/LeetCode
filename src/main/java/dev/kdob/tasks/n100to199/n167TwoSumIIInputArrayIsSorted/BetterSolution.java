@@ -1,6 +1,6 @@
 package dev.kdob.tasks.n100to199.n167TwoSumIIInputArrayIsSorted;
 
-public class BetterSolution {
+public class BetterSolution implements TwoSumSolution {
     public int[] twoSum(int[] numbers, int target) {
         int left = 0;
         int right = numbers.length - 1;

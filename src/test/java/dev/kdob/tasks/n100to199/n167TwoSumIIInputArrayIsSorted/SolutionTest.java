@@ -11,15 +11,10 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class SolutionTest {
 
-    @FunctionalInterface
-    interface TwoSumSolution {
-        int[] twoSum(int[] numbers, int target);
-    }
-
     static Stream<Arguments> solutions() {
         return Stream.of(
-                arguments("BetterSolution", (TwoSumSolution) new BetterSolution()::twoSum),
-                arguments("MyFirstSolution", (TwoSumSolution) new MyFirstSolution()::twoSum)
+                arguments("BetterSolution", new BetterSolution()),
+                arguments("MyFirstSolution", new MyFirstSolution())
         );
     }
 
