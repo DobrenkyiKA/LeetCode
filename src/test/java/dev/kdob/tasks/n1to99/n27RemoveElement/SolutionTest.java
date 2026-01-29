@@ -12,7 +12,10 @@ class SolutionTest {
 
 
     static Stream<Arguments> solutions() {
-        return Stream.of(Arguments.arguments("MyFirstSolution", new MyFirstSolution()));
+        return Stream.of(
+                Arguments.arguments("MyFirstSolution", new MyFirstSolution()),
+                Arguments.arguments("BetterSolution", new BetterSolution())
+        );
     }
 
     @ParameterizedTest(name = "{0}")
